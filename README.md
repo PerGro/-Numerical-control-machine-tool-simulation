@@ -64,3 +64,16 @@ Then, just run and watch :)
 
 ## Interface description
 
+When you just run main.py (or create a Windows() object), you will see a simple UI.
+
+In the menu, "模式" is used to switch the command type (default CNC), if you're first time to use it, you'll find another type: "UD", this is a "empty" type, which means it's just a name but nothing will happend before you set it up.
+
+Button "选取文件" is to choose txt file to import. And it only support .txt file.
+
+Then you can see the "普通模式" and "单步调试", default module is "normal module". The former means that the animation will play directly, while the latter will play the animation only when you press "Up" Key, and you can press "Down" Key to undo it.
+
+"放大倍数" is to zoom in or zoom out the animation view, it receives any positive number(default is 1).
+
+The biggest entry is just a preview entry, it's readonly.
+
+In the end, press "运行", and just watch!
