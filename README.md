@@ -56,11 +56,11 @@ Second, change them to:
       m = Main(file, mould, type='CNC')
       m.updata(fs)
       
-The parameter "file" is the txt path, "mould" have two choices: "normal" or "step" (what do they mean? I'll talk about later), "type" is command type, like CNC(pre-described) or something else (need custom set up).
+The parameter "file" is the txt file (.txt) path, "mould" have two choices: "normal" or "step" (what do they mean? I'll talk about later), "type" is command type, like CNC(pre-described) or something else (need custom set up).
 
 And the updata method is to change the scaling multiple of parameters(zoom in or out of the view).
 
-Then, just watch :)
+Then, just run and watch :)
 
 ## Interface description
 
