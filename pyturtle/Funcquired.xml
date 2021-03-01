@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Functions>
+	<CNC>
+		<init>
+			<coordinateMode>Coordinate Mode</coordinateMode>
+			<offsetMode>Offset Mode</offsetMode>
+			<knief>Knief</knief>
+		</init>
+
+		<circle_l>clockwise_circle</circle_l>
+		<circle_r>anti_clockwise_circle</circle_r>
+		<move_to>move_to_temp</move_to>
+	</CNC>
+	<UD></UD>
+</Functions>

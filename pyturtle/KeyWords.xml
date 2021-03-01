@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KeyWords>
+
+	<!-- 用于数控车铣的标记 -->
+	<CNC mode="On">
+		<!-- MovingWords主要用于标记使刀具或磨具移动的指令 -->
+		<MovingWords>
+			<G>
+				<G00 pereMethod="pu" laterMethod="pd" requiredParameters='2' required="X,Y">GDZ</G00>
+				<G01 pereMethod="None" laterMethod="None" requiredParameters='2' required="X,Y">GZO</G01>
+				<G02 pereMethod="None" laterMethod="None" requiredParameters='2' required="X,Y,I,J,R">GZT</G02>
+				<G03 pereMethod="None" laterMethod="None" requiredParameters='2' required="X,Y,I,J,R">GZH</G03>
+			</G>
+		</MovingWords>
+
+		<!-- StaticWords主要用于标记不令刀具或磨具移动的命令，如换刀等，同时也包括了O和N等用于辨识的命令 -->
+		<StaticWords>
+			<G>
+				<G90 pereMethod="None" laterMethod="None">GNZ</G90>
+				<G54 pereMethod="None" laterMethod="None">GFF</G54>
+				<G40 pereMethod="None" laterMethod="None">GFZ</G40>
+				<G41 pereMethod="None" laterMethod="None">GFO</G41>
+			</G>
+			<N>
+				<N pereMethod="None" laterMethod="None">N</N>
+			</N>
+			<O>
+				<O pereMethod="None" laterMethod="None">O</O>
+			</O>
+			<M>
+				<M30 pereMethod="None" laterMethod="None">M</M30>
+			</M>
+			<F>
+				<F pereMethod="None" laterMethod="None">F</F>
+			</F>
+			<T>
+				<T pereMethod="None" laterMethod="None">T</T>
+			</T>
+		</StaticWords>
+
+		<!-- Parameter主要用于标记各类参数命令，主要用于服务于移动指令，其中Z为空，本脚本也不提供对Z轴的演示 -->
+		<Parameter>
+			<X>X</X>
+			<Y>Y</Y>
+			<Z>Z</Z>
+			<I>X</I>
+			<J>Y</J>
+		</Parameter>
+
+		<!-- Attribute主要用于给属性区标记 -->
+		<Attribute>
+			<coordinateMode>Coordinate Mode</coordinateMode>
+			<offsetMode>Offset Mode</offsetMode>
+			<knief>Knief</knief>
+			<tooldinateMode>Tool Coordinate Mode</tooldinateMode>
+		</Attribute>
+	</CNC>
+	<!-- 已经设定好的用户自定义区域 -->
+	<UD mode="On"></UD>
+</KeyWords>
