@@ -167,6 +167,30 @@ and when your program detects 'G90' command, on lower left corner, will write a 
     
 ## Funcquired.xml
 
-pass
+In this file, for every different command type nodes, they only have two parts: init part & function contect part.
+
+    <Functions>
+      <CNC>
+        <!-- init part -->
+        <init>
+          <coordinateMode>Coordinate Mode</coordinateMode>
+        </init>
+        
+        <!-- function contect part -->
+        <circle_l>clockwise_circle</circle_l>
+      </CNC>
+    </Functions>
+    
+The information are stored in init nodes (they need same format just like they in KeyWords.xml) will write to the lower left corner on canvas before beginning.
+
+And the purpose of other nodes is to explain that in order to execute the method named by node name, the method within the node must be called because of the need of parameters.(all of this method should be wrote in operation.py)
+
+Take the above code as an example:
+
+    <circle_l>clockwise_circle</circle_l>
+    
+this line means when program need call operation.circle_l(), it need parameters from operation.clockwise_circle().
+
+> Every method that try to move the point should contect with another method to get enough parameters.
 
 <h1 id="1">Project API</h1>
