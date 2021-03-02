@@ -268,7 +268,7 @@ Finally, if you want to bind a method to a command, just add method to command's
 
 > More command templates in KeyWords.xml
 
-> The methods that can be called in the MovingWords section and their specifications will be mentioned in the [API documents](#1) later. 
+> The methods that can be called in the MovingWords section and their specifications will be mentioned in the [API documents](#3) later. 
 
 ### StaticWords: Used to mark the command that does not move the tool, but alse includes the command to updata the current information.
 
@@ -289,7 +289,7 @@ Its structure is same like MovingWords:
 
 Compared with former section, StaticWords's node don't have any attribute (Although this may not be the case in the file, but any attributes in this section do not work).
 
-In this case, the methods called will flash the animation information (in the lower left conrner of animation view), know more -> [API documents](#1).
+In this case, the methods called will flash the animation information (in the lower left conrner of animation view), know more -> [API documents](#3).
 
 ### Parameter: Used to mark coordinate command
 
@@ -350,7 +350,7 @@ this line means when program need call operation.circle_l(), it need parameters 
 
 > Every method that try to move the point should contect with another method to get enough parameters.
 
-<h1 id="1">Project API</h1>
+<h1 id="3">Project API</h1>
 
 Let's start easy though:
 
