@@ -194,3 +194,39 @@ this line means when program need call operation.circle_l(), it need parameters 
 > Every method that try to move the point should contect with another method to get enough parameters.
 
 <h1 id="1">Project API</h1>
+
+Let's start easy though:
+
+## main.py
+
+### main.Windows(): GUI class
+
+### main.Main(): Class for pretreatment
+
+Main.split(): used to separate command strings from numbers, and store them as different list (self.).
+
+Main.run(): used to create a Sorter() object, which is contrl animation.
+
+Main.check(): used to preprocessing text. If program meet error, it will create ErrorWindow() object and output.
+
+## parameter.py
+
+__*Overview*__: 
+
+Every method in this file just need return two parts. First is a kind of mark, you can choose one of them: 'staticAndNone', 'static', 'moving', 'staticAndInfo'. The second is importent, if this method is contect with a moving command, the second return should be a method, if this method do nothing, it should be None, if this method will change animation information, it should be a string list.
+
+For moving command, operation.py provides three public method: move_to() for straight line movement, circle_l() for clockwise rotation, circle_r() for anti-clockwise rotation.
+
+## operation.py
+
+operation.clockwise_circle(kwargs): used to provide parameters for the clockwise circle drawing method, it will return two parameters, one is radius, another is theta. Radius means the circle's radius, theta means turtle's orientation.
+
+When it works with turtle.circle(), it will find suitable path to draw a clockwise arc to contact the point A (input) and the point B (destination).
+
+> The major are is drawn only when the R value in the incoming parameter is negative.
+
+operation.anti_clockwise_circle(kwargs): just like operation.clockwise_circle(kwargs), when it works with turtle.circle(), it will fin suitable path to draw a anti-clockwise arc to contact the point A (input) and the point B (destination).
+
+> The major are is drawn only when the R value in the incoming parameter is negative.
+
+operation.move_to_temp(): just return the parameters to work with turtle.goto().
