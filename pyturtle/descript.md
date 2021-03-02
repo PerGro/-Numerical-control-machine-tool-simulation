@@ -111,6 +111,6 @@ Finally, if you want to bind a method to a command, just add method to command's
 
 > More command template is in KeyWords.xml
 
-> The methods that can be called in the MovingWords section and their specifications will be mentioned in the API documents later. 
+> The methods that can be called in the MovingWords section and their specifications will be mentioned in the [API documents](#1) later. 
 
-# Project API
+<h1 id="1">Project API</h1>
