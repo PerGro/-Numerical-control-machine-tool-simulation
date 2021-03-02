@@ -128,8 +128,45 @@ Its structure is same like MovingWords:
       </N>
     </StaticWords>
     
-> Actually, for faster running speed, in main.py line 117 and line 141, you can see a list named "nones", and the command included in will be skiped when program detects them. Of cause, you can change them, sacrifice running speed but in exchange for 100% utilization of .xml file. -> [More Information&Operation About This Project]()
+> Actually, for faster running speed, in main.py line 117 and line 141, you can see a list named "nones", and the command included in will be skiped when program detects them. Of cause, you can change them, sacrifice running speed but in exchange for 100% utilization of .xml file. -> [More Information&Operation About This Project.]()
 
+Compared with former section, StaticWords's node don't have any attribute (Although this may not be the case in the file, but any attributes in this section do not work).
 
+In this case, the methods called will flash the animation information (in the lower left conrner of animation view), know more -> [API documents](#1).
+
+### Parameter: Used to mark coordinate command
+
+This section is so simple ... it just store just like X Y Z I J K R commands...
+
+> In a word, it is responsible for managing the commands that need to provide parameters for the MovingWords' commands.
+
+### Attribute: Used to mark animation information
+
+In this case, all of nodes fllow the rules:
+
+    <Attribute>
+      <information_funcition_name>information_display</information_function_name>
+    </Attribute>
+    
+Let's take an example, in these codes:
+
+    <Attribute>
+      <coordinateMode>Coordinate Mode</coordinateMode>
+    </Attribute>
+    
+and in parameter.py, we have a method:
+
+    def GNZ():
+        return 'staticAndInfo', 'coordinateMode:Absolute value coordinate mode'
+
+this method will be called when program detects the 'G90' command, and it just return two parameters, 'staticAndInfo' just a mark (but it's necessary), 'coordinateMode:Absolute value coordinate mode' will talk to program: "Hey! We need find coordinateMode section and change its content to 'Absolute value coordinate mode'!"
+
+and when your program detects 'G90' command, on lower left corner, will write a line:
+    
+    Coordinate Mode: Absolute value coor
+    
+## Funcquired.xml
+
+pass
 
 <h1 id="1">Project API</h1>
