@@ -109,8 +109,27 @@ Finally, if you want to bind a method to a command, just add method to command's
       </G>
     </MovingWords>
 
-> More command template is in KeyWords.xml
+> More command templates in KeyWords.xml
 
 > The methods that can be called in the MovingWords section and their specifications will be mentioned in the [API documents](#1) later. 
+
+### StaticWords: Used to mark the command that does not move the tool, but alse includes the command to updata the current information.
+
+Its structure is same like MovingWords:
+
+    <StaticWords>
+      <G>
+        <G40>GFZ</G40>
+        <!-- some other Gxx command -->
+      </G>
+      
+      <N>
+        <N>N</N>
+      </N>
+    </StaticWords>
+    
+> Actually, for faster running speed, in main.py line 117 and line 141, you can see a list named "nones", and the command included in will be skiped when program detects them. Of cause, you can change them, sacrifice running speed but in exchange for 100% utilization of .xml file. -> [More Information&Operation About This Project]()
+
+
 
 <h1 id="1">Project API</h1>
