@@ -285,7 +285,7 @@ Its structure is same like MovingWords:
       </N>
     </StaticWords>
     
-> Actually, for faster running speed, in main.py line 117 and line 141, you can see a list named "nones", and the command included in will be skiped when program detects them. Of cause, you can change them, sacrifice running speed but in exchange for 100% utilization of .xml file. -> [More Information&Operation About This Project.]()
+> Actually, for faster running speed, in main.py line 117 and line 141, you can see a list named "nones", and the command included in will be skiped when program detects them. Of cause, you can change them, sacrifice running speed but in exchange for 100% utilization of .xml file. -> [More Information&Operation About This Project.](#5)
 
 Compared with former section, StaticWords's node don't have any attribute (Although this may not be the case in the file, but any attributes in this section do not work).
 
@@ -387,3 +387,28 @@ operation.anti_clockwise_circle(kwargs): just like operation.clockwise_circle(kw
 > The major are is drawn only when the R value in the incoming parameter is negative.
 
 operation.move_to_temp(): just return the parameters to work with turtle.goto().
+
+<h1 id="5">More Imformation&Operation About This Project</h1>
+
+## Complete set up process
+
+Our destination:
+
+1.Create a new command type named TEST.
+
+2.Add some popular commands (based CNC commands).
+
+3.Write some new methods to deal with more required.
+
+4.Test program and run it.
+
+### Config main.py
+
+First, we need to config main.py to create a interface in tkinter GUI for being able to change command type to our new type.
+
+And it's easy, first, find Windows class. Second, add a method in this class:
+
+    def TEST(self):
+        self.type = 'TEST'
+        
+> The method name must be same with your command type, so try to use fully capitalized words as your command type name.
