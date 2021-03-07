@@ -439,4 +439,9 @@ Open WordKeys.xml, and add a new node in KeyWords node.
     
 > Attribute "mode" is necessary. It has two legal value: "On" or "Off".
         
-And simplely run main.py, you will find that is a new option DVD in "模式" menu.
+And simply run main.py, you will find that is a new option DVD in "模式" menu.
+
+## Step3: prepare the code list
+
+Actually, this step should be done before you begin to create your command type, whatever, here is my code list (maybe you will find this code list is very similar to CNC code).
+
