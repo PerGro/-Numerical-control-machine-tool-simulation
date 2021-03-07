@@ -412,3 +412,31 @@ And it's easy, first, find Windows class. Second, add a method in this class:
         self.type = 'TEST'
         
 > The method name must be same with your command type, so try to use fully capitalized words as your command type name.
+
+<h1 id='5'>More Information&Operation About This Project</h1>
+
+## Complete description of a custom define
+
+Our destination: creating a new command type named "DVD" (a type of command like CNC), and run this script.
+
+### Step1: edit main.py
+
+Open main.py and add later method in Windows() class:
+
+    def DVD(self):
+        self.type = 'DVD'
+        
+### Step2: edit WordKeys.xml
+
+Open WordKeys.xml, and add a new node in KeyWords node.
+
+    <KeyWords>
+      <!-- something else -->
+      
+      <DVD mode="On">
+      </DVD>
+    </KeyWords>
+    
+> Attribute "mode" is necessary. It has two legal value: "On" or "Off".
+        
+And simplely run main.py, you will find that is a new option DVD in "模式" menu.
