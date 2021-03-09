@@ -458,5 +458,34 @@ Actually, this step should be done before you begin to create your command type,
     G20: change knief's speed
     G30: change knief's attribute 0 to 1
     
-As a example, we just need these codes to just simply know how to set them up.
+As a example, these codes are enough to just simply let we know how to set them up.
 
+## Step4: Sort them out
+
+    MovingWords:
+        G00
+        G01
+        G04
+        G05
+        G06
+        G07
+        
+    StaicWords:
+        G02
+        G03
+        N
+        O
+        G20
+        G30
+        
+    Parameters:
+         X
+         Y
+         I
+         J
+         R
+         
+    Attribute:
+        knief's speed
+        knief's attribute
+        
