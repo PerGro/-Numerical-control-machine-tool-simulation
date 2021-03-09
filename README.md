@@ -489,3 +489,46 @@ As a example, these codes are enough to just simply let we know how to set them 
         knief's speed
         knief's attribute
         
+## Step5: add them in KeyWords.xml first
+
+All codes blow should be in the DVD node.
+
+    <MovingWords>
+      <G>
+        <G00 pereMethod="pu" laterMethod="pd" requiredParameters="2" required="X,Y">GZZ</G00>
+        <G01 pereMethod="None" laterMethod="None" requiredParameters="2" required="X,Y">GZO</G01>
+        <G04 pereMethod="None" laterMethod="None" requiredParameters="3" required="X,Y,R">GZF</G04>
+        <G05 pereMethod="None" laterMethod="None" requiredParameters="3" required="X,Y,R">GZFF</G05>
+        <G06 pereMethod="None" laterMethod="None" requiredParameters="2" required="I,J">GZX</G06>
+        <G07 pereMethod="None" laterMethod="None" requiredParameters="2" required="I,J">GZS</G07>
+      </G>
+    <MovingWords>
+      
+    <StaicWords>
+      <G>
+        <G02>GZT</G02>
+        <G03>GZTT</G03>
+        <G20>GTZ</G20>
+        <G30>GTTZ</G30>
+      </G>
+      
+      <N>
+        <N>N</N>
+      </N>
+      
+      <O>
+        <O>O</O>
+      </O>
+      
+    <Parameter>
+			   <X>X</X>
+			   <Y>Y</Y>
+			   <Z>Z</Z>
+		   	<I>X</I>
+	   		<J>Y</J>
+		  </Parameter>
+    
+    <Attribute>
+      <kniefSpeed>Knief Speed</kniefSpeed>
+      <kniefAttribute>Knief Attribute</kniefAttribute>
+    </Attribute>
