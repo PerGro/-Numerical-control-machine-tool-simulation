@@ -441,7 +441,7 @@ Open WordKeys.xml, and add a new node in KeyWords node.
         
 And simply run main.py, you will find that is a new option DVD in "模式" menu.
 
-## Step3: prepare the code list
+### Step3: prepare the code list
 
 Actually, this step should be done before you begin to create your command type, whatever, here is my code list (maybe you will find this code list is very similar to CNC code).
 
@@ -460,7 +460,7 @@ Actually, this step should be done before you begin to create your command type,
     
 As a example, these codes are enough to just simply let we know how to set them up.
 
-## Step4: Sort them out
+### Step4: Sort them out
 
     MovingWords:
         G00
@@ -489,7 +489,7 @@ As a example, these codes are enough to just simply let we know how to set them 
         knief's speed
         knief's attribute
         
-## Step5: add them in KeyWords.xml first
+### Step5: add them in KeyWords.xml first
 
 All codes blow should be in the DVD node.
 
