@@ -521,12 +521,12 @@ All codes blow should be in the DVD node.
       </O>
       
     <Parameter>
-			   <X>X</X>
-			   <Y>Y</Y>
-			   <Z>Z</Z>
-		   	<I>X</I>
-	   		<J>Y</J>
-		  </Parameter>
+      <X>X</X>
+      <Y>Y</Y>
+      <Z>Z</Z>
+      <I>I</I>
+      <J>J</J>
+    </Parameter>
     
     <Attribute>
       <kniefSpeed>Knief Speed</kniefSpeed>
