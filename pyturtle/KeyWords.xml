@@ -43,8 +43,8 @@
 			<X>X</X>
 			<Y>Y</Y>
 			<Z>Z</Z>
-			<I>X</I>
-			<J>Y</J>
+			<I>I</I>
+			<J>J</J>
 		</Parameter>
 
 		<!-- Attribute主要用于给属性区标记 -->
