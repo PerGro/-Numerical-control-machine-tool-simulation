@@ -445,3 +445,18 @@ And simply run main.py, you will find that is a new option DVD in "模式" menu.
 
 Actually, this step should be done before you begin to create your command type, whatever, here is my code list (maybe you will find this code list is very similar to CNC code).
 
+    G00: move to point (x, y) quickly, need parameters: X, Y
+    G01: move to point (x, y) slowly, need parameters: X, Y
+    G02: do nothing
+    G03: do nothing
+    G04: move to point (x, y) following a clockwise path, radius=r, need parameters: X, Y, R
+    G05: move to point (x, y) following a anti-clockwise path, radius=r, need parameters: X, Y, R
+    G06: draw a clockwise circle, need a point as a starting point, need parameters: I, J
+    G07: draw a anti-clockwise circle, need a point as a starting point, need parameters: I, J
+    N: as line marker
+    O: as file marker
+    G20: change knief's speed
+    G30: change knief's attribute 0 to 1
+    
+As a example, we just need these codes to just simply know how to set them up.
+
